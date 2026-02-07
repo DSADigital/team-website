@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Davi de Sousa | Driver Profile - DSA Digital Formula Team</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#FEDF00",
+                        "brazil-green": "#009440",
+                        "brazil-blue": "#002776",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#0a0a05",
+                        "carbon-gray": "#1a1a1a"
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Space Grotesk', sans-serif;
+            }
+        }
+        .carbon-texture {
+            background-color: #0a0a05;
+            background-image: linear-gradient(45deg, #111 25%, transparent 25%), 
+                              linear-gradient(-45deg, #111 25%, transparent 25%), 
+                              linear-gradient(45deg, transparent 75%, #111 75%), 
+                              linear-gradient(-45deg, transparent 75%, #111 75%);
+            background-size: 4px 4px;
+        }
+        .skew-box {
+            transform: skewX(-12deg);
+        }
+        .skew-fix {
+            transform: skewX(12deg);
+        }
+        .gradient-overlay {
+            background: linear-gradient(90deg, #0a0a05 0%, rgba(10,10,5,0.8) 40%, rgba(10,10,5,0) 100%);
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(254, 223, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-background-dark text-white overflow-x-hidden">
+    <header class="fixed top-0 w-full z-50 bg-background-dark/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="size-8 bg-primary flex items-center justify-center rounded">
+                    <span class="material-symbols-outlined text-background-dark font-bold">speed</span>
+                </div>
+                <h2 class="text-xl font-bold tracking-tighter uppercase italic">DSA Digital <span
+                        class="text-primary">Formula</span></h2>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                    href="#about">Biography</a>
+                <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                    href="#stats">Stats</a>
+            </nav>
+            <a href="/index.html">
+                <button
+                    class="bg-primary text-background-dark px-6 py-2 rounded font-black uppercase italic text-sm skew-box hover:scale-105 transition-transform">
+                    <span class="skew-fix block">Back to Team</span>
+                </button>
+            </a>
+        </div>
+    </header>
+    <section class="relative min-h-screen flex items-center carbon-texture pt-20">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img alt="Formula 1600 Background" class="w-full h-full object-cover" src="imgs/bg.png" />
+        </div>
+        <div class="absolute inset-0 gradient-overlay z-10"></div>
+        <div class="relative z-20 w-full max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
+            <div class="space-y-6">
+                <div class="flex items-center gap-4">
+                    <span class="px-3 py-1 bg-brazil-green text-white font-black italic skew-box">
+                        <span class="skew-fix block text-sm">PRO DRIVER</span>
+                    </span>
+                    <span class="h-[2px] w-20 bg-primary"></span>
+                </div>
+                <h1 class="text-7xl md:text-9xl font-black uppercase italic leading-[0.85]">
+                    Davi de <br />
+                    <span class="text-primary">Sousa</span>
+                </h1>
+                <div class="flex items-center gap-8 mt-4">
+                    <span class="text-8xl font-black italic text-transparent stroke-primary"
+                        style="-webkit-text-stroke: 2px #FEDF00;">15</span>
+                    <div class="border-l-4 border-brazil-blue pl-6">
+                        <p class="text-2xl font-bold italic text-brazil-green uppercase">Lead Driver</p>
+                        <p class="text-slate-400 font-medium">DSA Digital Formula Team</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative hidden lg:block">
+                <div class="absolute -inset-4 border-4 border-primary/20 rounded-xl skew-box"></div>
+                <img alt="Davi de Sousa Portrait"
+                    class="w-2/3 h-auto rounded-lg shadow-2xl skew-box relative z-10 border-b-8 border-r-8 border-brazil-blue"
+                    src="imgs/driver.png" />
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white text-background-dark relative overflow-hidden" id="about">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-slate-50 skew-x-[-15deg] translate-x-32 z-0"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h3 class="text-brazil-blue font-black uppercase tracking-widest mb-4 flex items-center gap-2">
+                        <span class="h-6 w-1 bg-primary"></span> About Davi
+                    </h3>
+                    <h2 class="text-5xl font-black italic uppercase mb-8 leading-none">The Precision <span
+                            class="text-brazil-green">Maverick</span></h2>
+                    <div class="space-y-6 text-lg text-slate-600 leading-relaxed">
+                        <p>Born in Goiás, Davi de Sousa's journey in motorsport began at the age of twenty. His
+                            transition from Asseto Corsa to the iRacing Formula 1600 category has been marked by a
+                            relentless
+                            pursuit
+                            of aerodynamic perfection and tactical brilliance.</p>
+                        <p>Known for his "risky" racing lines, Davi has earned a reputation for being one of the most
+                            efficient drivers in wet conditions. His racing style is a masterclass in controlled
+                            aggression—knowing exactly when to push the limits of his #15 machine and when to preserve
+                            the rubber for the final sprint.</p>
+                        <p>Away from the track, Davi works closely with DSA Digital's data engineers, translating
+                            high-speed telemetry into winning strategies that have redefined the team's performance
+                            metrics this season.</p>
+                    </div>
+                    <div class="mt-10 flex gap-4">
+                        <div class="flex flex-col">
+                            <span class="text-xs uppercase font-bold text-slate-400">Hometown</span>
+                            <span class="text-xl font-bold uppercase italic">Goiás, BR</span>
+                        </div>
+                        <div class="w-[1px] bg-slate-200 h-10"></div>
+                        <div class="flex flex-col">
+                            <span class="text-xs uppercase font-bold text-slate-400">Experience</span>
+                            <span class="text-xl font-bold uppercase italic">1 Season</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img alt="Davi in Garage" class="rounded-lg object-cover h-64 w-full shadow-lg"
+                        src="imgs/car.png" />
+                    <img alt="Action Shot" class="rounded-lg object-cover h-64 w-full mt-12 shadow-lg"
+                        src="imgs/helmet.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 carbon-texture border-y border-white/5" id="stats">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-black italic uppercase mb-4">Season <span class="text-primary">Dashboard</span>
+                </h2>
+                <p class="text-slate-400 tracking-widest uppercase text-sm">Real-time Performance Metrics</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="stat-card bg-white/5 border-l-4 border-primary p-8 transition-all">
+                    <span class="text-slate-500 uppercase font-bold text-xs tracking-tighter">Career Wins</span>
+                    <div class="text-5xl font-black italic mt-2 text-white">0</div>
+                    <div class="mt-4 flex items-center text-brazil-green text-sm font-bold">
+                        <span class="material-symbols-outlined text-sm">trending_up</span> +0 this season
+                    </div>
+                </div>
+                <div class="stat-card bg-white/5 border-l-4 border-brazil-green p-8 transition-all">
+                    <span class="text-slate-500 uppercase font-bold text-xs tracking-tighter">Podiums</span>
+                    <div class="text-5xl font-black italic mt-2 text-white">0</div>
+                    <div class="mt-4 flex items-center text-brazil-green text-sm font-bold">
+                        <span class="material-symbols-outlined text-sm">trending_up</span> 82% finish rate
+                    </div>
+                </div>
+                <div class="stat-card bg-white/5 border-l-4 border-brazil-blue p-8 transition-all">
+                    <span class="text-slate-500 uppercase font-bold text-xs tracking-tighter">Laps Led</span>
+                    <div class="text-5xl font-black italic mt-2 text-white">0</div>
+                    <div class="mt-4 flex items-center text-primary text-sm font-bold">
+                        <span class="material-symbols-outlined text-sm">timer</span> Top of League
+                    </div>
+                </div>
+                <div class="stat-card bg-white/5 border-l-4 border-white p-8 transition-all">
+                    <span class="text-slate-500 uppercase font-bold text-xs tracking-tighter">Champ. Points</span>
+                    <div class="text-5xl font-black italic mt-2 text-white">5</div>
+                    <div class="mt-4 flex items-center text-slate-400 text-sm font-bold">
+                        <span class="material-symbols-outlined text-sm">emoji_events</span> P4 Overall
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white pt-20 pb-10 border-t-8 border-primary">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-2">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="size-8 bg-primary flex items-center justify-center rounded">
+                            <span class="material-symbols-outlined text-black font-bold">speed</span>
+                        </div>
+                        <h2 class="text-2xl font-black tracking-tighter uppercase italic">DSA Digital <span
+                                class="text-primary">Formula Team</span></h2>
+                    </div>
+                    <p class="text-slate-400 max-w-sm mb-8">
+                        The premiere racing team for iRacing Formula 1600. Excellence is not an option, it's our
+                        standard on every
+                        corner,
+                        every lap, every race.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-black uppercase italic mb-6">Quick Links</h4>
+                    <ul class="space-y-4 text-slate-400 font-medium">
+                        <li><a class="hover:text-primary transition-colors" href="#">About the Team</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Driver Stats</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">Race Schedule</a></li>
+                        <!-- <li><a class="hover:text-primary transition-colors" href="#">Partner Program</a></li> -->
+                    </ul>
+                </div>
+                <!-- <div>
+          <h4 class="text-lg font-black uppercase italic mb-6">Newsletter</h4>
+          <p class="text-sm text-slate-400 mb-4">Get race updates and exclusive paddock content.</p>
+          <div class="flex">
+            <input class="bg-white/5 border-none rounded-l-lg px-4 py-3 focus:ring-1 focus:ring-primary w-full"
+              placeholder="Email Address" type="email" />
+            <button class="bg-primary text-black px-4 rounded-r-lg font-black italic uppercase text-xs">Join</button>
+          </div>
+        </div> -->
+            </div>
+            <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-slate-500 text-sm italic">© 2025 DSA Digital Formula Team. All Rights Reserved.</p>
+                <!-- <div class="flex gap-8 text-xs font-bold uppercase tracking-widest text-slate-500">
+          <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+          <a class="hover:text-white transition-colors" href="#">Terms of Use</a>
+        </div> -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
