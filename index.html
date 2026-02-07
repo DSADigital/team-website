@@ -79,8 +79,8 @@
         </h2>
       </div>
       <nav class="hidden md:flex items-center gap-10">
-        <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
-          href="/driver-profile.html">Driver Profile</a>
+        <a draggable="false" class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+          href="/driver-profile">Driver Profile</a>
         <!-- <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#stats">Live
           Stats</a> -->
         <!-- <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
@@ -98,7 +98,8 @@
   <section class="relative min-h-screen flex items-end pt-24 overflow-hidden carbon-texture">
     <!-- Background Hero Image -->
     <div class="absolute inset-0 z-0">
-      <img class="w-full h-full object-cover grayscale hover:grayscale-0 opacity-60 transition-all duration-700"
+      <img draggable="false"
+        class="w-full h-full object-cover grayscale hover:grayscale-0 opacity-60 transition-all duration-700"
         data-alt="Formula 1600 car racing on track with team colors" src="imgs/bg.png" />
       <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
       <div class="absolute inset-0 bg-gradient-to-r from-background-dark/80 via-transparent to-transparent"></div>
@@ -120,12 +121,6 @@
           Formula
           1600.
         </p>
-        <div class="flex flex-wrap gap-4">
-          <button style="cursor: not-allowed;"
-            class="bg-primary text-background-dark px-8 py-4 rounded font-black uppercase italic text-lg hover:bg-white transition-colors flex items-center gap-2">
-            Enter Paddock <span class="material-symbols-outlined">chevron_right</span>
-          </button>
-        </div>
       </div>
     </div>
     <!-- Floating Number Background -->
@@ -142,8 +137,8 @@
             class="absolute -top-4 -left-4 w-full h-full border-2 border-brazil-green rounded-lg translate-x-2 translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform">
           </div>
           <div class="relative rounded-lg overflow-hidden aspect-[4/5] bg-slate-800">
-            <img class="w-full h-full object-cover" data-alt="Professional driver portrait in racing suit"
-              src="imgs/driver.png" />
+            <img draggable="false" class="w-full h-full object-cover"
+              data-alt="Professional driver portrait in racing suit" src="imgs/driver.png" />
             <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black to-transparent">
               <span class="text-primary text-5xl font-black italic">#15</span>
             </div>
@@ -173,6 +168,14 @@
               <p class="text-xs uppercase font-bold text-slate-500">Top Speed</p>
               <p class="text-3xl font-black italic text-primary">208 km/h</p>
             </div>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <a href="/driver-profile" draggable="false">
+              <button
+                class="bg-primary text-background-dark px-8 py-4 rounded font-black uppercase italic text-lg hover:bg-white transition-colors flex items-center gap-2">
+                Driver Profile <span class="material-symbols-outlined">chevron_right</span>
+              </button>
+            </a>
           </div>
           <!-- <button
             class="w-full bg-brazil-blue text-white py-4 rounded font-bold uppercase tracking-widest hover:bg-brazil-blue/80 transition-colors flex justify-center items-center gap-2">
@@ -300,14 +303,15 @@
       </h2>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <div class="col-span-2 row-span-2 rounded-lg overflow-hidden group">
-          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt=" "
+          <img draggable="false"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt=" "
             src="imgs/car.png" />
         </div>
-        <div class="rounded-lg overflow-hidden group">
+        <div draggable="false" class="rounded-lg overflow-hidden group">
           <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt=" "
             src="imgs/helmet.png" />
         </div>
-        <div class="col-span-2 rounded-lg overflow-hidden group h-48">
+        <div draggable="false" class="col-span-2 rounded-lg overflow-hidden group h-48">
           <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt=" "
             src="imgs/bg.png" />
         </div>
@@ -335,9 +339,10 @@
         <div>
           <h4 class="text-lg font-black uppercase italic mb-6">Quick Links</h4>
           <ul class="space-y-4 text-slate-400 font-medium">
-            <li><a class="hover:text-primary transition-colors" href="#">About the Team</a></li>
-            <li><a class="hover:text-primary transition-colors" href="#">Driver Stats</a></li>
-            <li><a class="hover:text-primary transition-colors" href="#">Race Schedule</a></li>
+            <!-- <li><a class="hover:text-primary transition-colors" href="#">About the Team</a></li> -->
+            <li><a draggable="false" class="hover:text-primary transition-colors" href="/driver-profile">Driver
+                Profile</a></li>
+            <!-- <li><a class="hover:text-primary transition-colors" href="#">Race Schedule</a></li> -->
             <!-- <li><a class="hover:text-primary transition-colors" href="#">Partner Program</a></li> -->
           </ul>
         </div>
