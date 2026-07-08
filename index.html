@@ -6,6 +6,7 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>DSA Digital Formula Team | Davi de Sousa</title>
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
     rel="stylesheet" />
@@ -40,6 +41,11 @@
     }
   </script>
   <style>
+    * {
+      scrollbar-width: thin;
+      user-select: none;
+    }
+
     body {
       font-family: 'Space Grotesk', sans-serif;
     }
@@ -72,15 +78,15 @@
   <header class="fixed top-0 w-full z-50 bg-background-dark/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <div class="size-8 bg-primary flex items-center justify-center rounded">
-          <span class="material-symbols-outlined text-background-dark font-bold">speed</span>
-        </div>
-        <h2 class="text-xl font-bold tracking-tighter uppercase italic">DSA Digital <span class="text-primary">Formula Team
+        <h2 class="text-xl font-bold tracking-tighter uppercase italic">DSA Digital <span class="text-primary">Formula
+            Team
         </h2>
       </div>
       <nav class="hidden md:flex items-center gap-10">
         <a draggable="false" class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
-          href="/driver-profile">Driver Profile</a>
+          href="/drivers/driver-1">Driver 1</a>
+        <a draggable="false" class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
+          href="/drivers/driver-2">Driver 2</a>
         <!-- <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors" href="#stats">Live
           Stats</a> -->
         <!-- <a class="text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors"
@@ -110,16 +116,15 @@
           <span class="h-1 w-12 bg-brazil-green"></span>
           <span class="h-1 w-12 bg-primary"></span>
           <span class="h-1 w-12 bg-brazil-blue"></span>
-          <span class="text-xs font-bold uppercase tracking-[0.3em] text-primary ml-2">Official Formula 1600 Team</span>
+          <span class="text-xs font-bold uppercase tracking-[0.3em] text-primary ml-2">Virtual Formula 1600 Team</span>
         </div>
         <h1 class="text-6xl md:text-8xl font-black uppercase italic leading-none mb-6">
           DSA Digital <br />
           <span class="text-primary">Formula Team</span>
         </h1>
         <p class="text-xl text-slate-300 mb-8 font-light max-w-xl border-l-2 border-primary pl-6">
-          Unleashing precision on the track. Driven by speed, defined by excellence in the high-stakes world of iRacing
-          Formula
-          1600.
+          Unleashing precision on the track. Driven by speed, defined by excellence in the highly competitive world of
+          sim racing.
         </p>
       </div>
     </div>
@@ -128,7 +133,8 @@
       <span class="text-[40rem] font-black italic text-white leading-none">15</span>
     </div>
   </section>
-  <!-- Driver Spotlight -->
+
+  <!-- Driver 1 Spotlight -->
   <section class="py-24 bg-white dark:bg-background-dark border-y border-white/5" id="profile">
     <div class="max-w-7xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-16 items-center">
@@ -148,7 +154,7 @@
           <h3 class="text-brazil-green font-bold uppercase tracking-widest mb-2">Driver Spotlight</h3>
           <h2 class="text-5xl font-black italic uppercase mb-6">Davi de <span class="text-primary">Sousa</span></h2>
           <p class="text-slate-400 text-lg mb-8 leading-relaxed">
-            Brazilian driver Davi is competing in the iRacing Formula 1600 circuit.
+            The Brazilian driver compete in various categories of sim racing.
             He combines aggressive racing lines with precision, making him a formidable competitor.
           </p>
           <div class="grid grid-cols-2 gap-4 mb-8">
@@ -170,7 +176,7 @@
             </div>
           </div>
           <div class="flex flex-wrap gap-4">
-            <a href="/driver-profile" draggable="false">
+            <a href="/drivers/driver-2" draggable="false">
               <button
                 class="bg-primary text-background-dark px-8 py-4 rounded font-black uppercase italic text-lg hover:bg-white transition-colors flex items-center gap-2">
                 Driver Profile <span class="material-symbols-outlined">chevron_right</span>
@@ -185,6 +191,66 @@
       </div>
     </div>
   </section>
+
+  <!-- Driver 2 Spotlight -->
+  <section class="py-24 bg-white dark:bg-background-dark border-y border-white/5" id="profile">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div class="relative group">
+          <div
+            class="absolute -top-4 -left-4 w-full h-full border-2 border-brazil-green rounded-lg translate-x-2 translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform">
+          </div>
+          <div class="relative rounded-lg overflow-hidden aspect-[4/5] bg-slate-800">
+            <img draggable="false" class="w-full h-full object-cover"
+              data-alt="Professional driver portrait in racing suit" src="imgs/driver.png" />
+            <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black to-transparent">
+              <span class="text-primary text-5xl font-black italic">#24</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-brazil-green font-bold uppercase tracking-widest mb-2">Driver Spotlight</h3>
+          <h2 class="text-5xl font-black italic uppercase mb-6">Luiz Henrique <span class="text-primary">Gomes</span>
+          </h2>
+          <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+            Brazilian driver Luiz Henrique is now entering the world of sim racing.
+            He combines boldness with precision, making him a formidable competitor.
+          </p>
+          <div class="grid grid-cols-2 gap-4 mb-8">
+            <div class="p-6 rounded bg-slate-100 dark:bg-white/5 border-l-4 border-primary">
+              <p class="text-xs uppercase font-bold text-slate-500">Podiums</p>
+              <p class="text-3xl font-black italic">0</p>
+            </div>
+            <div class="p-6 rounded bg-slate-100 dark:bg-white/5 border-l-4 border-brazil-green">
+              <p class="text-xs uppercase font-bold text-slate-500">Fastest Laps</p>
+              <p class="text-3xl font-black italic">0</p>
+            </div>
+            <div class="p-6 rounded bg-slate-100 dark:bg-white/5 border-l-4 border-brazil-blue">
+              <p class="text-xs uppercase font-bold text-slate-500">Win Rate</p>
+              <p class="text-3xl font-black italic">0%</p>
+            </div>
+            <div class="p-6 rounded bg-slate-100 dark:bg-white/5 border-l-4 border-white">
+              <p class="text-xs uppercase font-bold text-slate-500">Top Speed</p>
+              <p class="text-3xl font-black italic text-primary">0 km/h</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <a href="/drivers/driver-2" draggable="false">
+              <button
+                class="bg-primary text-background-dark px-8 py-4 rounded font-black uppercase italic text-lg hover:bg-white transition-colors flex items-center gap-2">
+                Driver Profile <span class="material-symbols-outlined">chevron_right</span>
+              </button>
+            </a>
+          </div>
+          <!-- <button
+            class="w-full bg-brazil-blue text-white py-4 rounded font-bold uppercase tracking-widest hover:bg-brazil-blue/80 transition-colors flex justify-center items-center gap-2">
+            Download Full Bio <span class="material-symbols-outlined text-sm">download</span>
+          </button> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Racing Calendar -->
   <!-- <section class="py-24 carbon-texture relative overflow-hidden hidden" id="calendar">
     <div class="max-w-7xl mx-auto px-6 relative z-10">
@@ -340,7 +406,9 @@
           <h4 class="text-lg font-black uppercase italic mb-6">Quick Links</h4>
           <ul class="space-y-4 text-slate-400 font-medium">
             <!-- <li><a class="hover:text-primary transition-colors" href="#">About the Team</a></li> -->
-            <li><a draggable="false" class="hover:text-primary transition-colors" href="/driver-profile">Driver
+            <li><a draggable="false" class="hover:text-primary transition-colors" href="/drivers/driver-1">Driver 1
+                Profile</a></li>
+            <li><a draggable="false" class="hover:text-primary transition-colors" href="/drivers/driver-2">Driver 2
                 Profile</a></li>
             <!-- <li><a class="hover:text-primary transition-colors" href="#">Race Schedule</a></li> -->
             <!-- <li><a class="hover:text-primary transition-colors" href="#">Partner Program</a></li> -->
@@ -357,11 +425,11 @@
         </div> -->
       </div>
       <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
-        <p class="text-slate-500 text-sm italic">© 2025 DSA Digital Formula Team. All Rights Reserved.</p>
-        <!-- <div class="flex gap-8 text-xs font-bold uppercase tracking-widest text-slate-500">
-          <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
-          <a class="hover:text-white transition-colors" href="#">Terms of Use</a>
-        </div> -->
+        <p class="text-slate-500 text-sm italic">© 2026 DSA Digital Formula Team. All Rights Reserved.</p>
+        <div class="flex gap-8 text-xs font-bold uppercase tracking-widest text-slate-500">
+          <a class="hover:text-white transition-colors" href="https://dsadigital.com.br/privacy">Privacy Policy</a>
+          <!-- <a class="hover:text-white transition-colors" href="#">Terms of Use</a> -->
+        </div>
       </div>
     </div>
   </footer>

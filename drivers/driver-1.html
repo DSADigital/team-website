@@ -5,7 +5,9 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Davi de Sousa | Driver Profile - DSA Digital Formula Team</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
 
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
         rel="stylesheet" />
@@ -39,6 +41,11 @@
         }
     </script>
     <style type="text/tailwindcss">
+        * {
+            scrollbar-width: thin;
+            user-select: none;
+        }
+
         @layer base {
             body {
                 font-family: 'Space Grotesk', sans-serif;
@@ -72,9 +79,6 @@
     <header class="fixed top-0 w-full z-50 bg-background-dark/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <div class="size-8 bg-primary flex items-center justify-center rounded">
-                    <span class="material-symbols-outlined text-background-dark font-bold">speed</span>
-                </div>
                 <h2 class="text-xl font-bold tracking-tighter uppercase italic">DSA Digital <span
                         class="text-primary">Formula Team</span></h2>
             </div>
@@ -101,7 +105,7 @@
             <div class="space-y-6">
                 <div class="flex items-center gap-4">
                     <span class="px-3 py-1 bg-brazil-green text-white font-black italic skew-box">
-                        <span class="skew-fix block text-sm">ROOKIE DRIVER</span>
+                        <span class="skew-fix block text-sm">FULL-TIME DRIVER</span>
                     </span>
                     <span class="h-[2px] w-20 bg-primary"></span>
                 </div>
@@ -122,7 +126,7 @@
                 <div class="absolute -inset-4 border-4 border-primary/20 rounded-xl skew-box"></div>
                 <img draggable="false" alt="Davi de Sousa Portrait"
                     class="w-2/3 h-auto rounded-lg shadow-2xl skew-box relative z-10 border-b-8 border-r-8 border-brazil-blue"
-                    src="imgs/driver.png" />
+                    src="../imgs/driver.png" />
             </div>
         </div>
     </section>
@@ -139,13 +143,11 @@
                     <div class="space-y-6 text-lg text-slate-600 leading-relaxed">
                         <p>Born in Goiás, Davi de Sousa's journey in motorsport began at the age of twenty. His
                             transition from Assetto Corsa to the iRacing Formula 1600 category has been marked by a
-                            relentless
-                            pursuit
-                            of aerodynamic perfection and tactical brilliance.</p>
-                        <p>Known for his "risky" racing lines, Davi has earned a reputation for being one of the most
-                            efficient drivers in wet conditions. His racing style is a masterclass in controlled
-                            aggression—knowing exactly when to push the limits of his #15 machine and when to preserve
-                            the rubber for the final sprint.</p>
+                            relentless pursuit of aerodynamic perfection and tactical brilliance.</p>
+                        <p>Known for his "risky" racing lines, Davi has earned a reputation as one of the most efficient
+                            drivers on high-speed tracks. His driving style is a true display of controlled aggression:
+                            he knows exactly when to push his No. 15 machine to the limit and when to conserve his tires
+                            for the final sprint.</p>
                         <p>Away from the track, Davi works closely with DSA Digital's data engineers, translating
                             high-speed telemetry into winning strategies that have redefined the team's performance
                             metrics this season.</p>
@@ -158,16 +160,16 @@
                         <div class="w-[1px] bg-slate-200 h-10"></div>
                         <div class="flex flex-col">
                             <span class="text-xs uppercase font-bold text-slate-400">Experience</span>
-                            <span class="text-xl font-bold uppercase italic">1 Season</span>
+                            <span class="text-xl font-bold uppercase italic">2 Years</span>
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 gap-4">
+                <!-- <div class="grid grid-cols-2 gap-4">
                     <img draggable="false" alt="Davi in Garage" class="rounded-lg object-cover h-64 w-full shadow-lg"
-                        src="imgs/car.png" />
+                        src="../imgs/car.png" />
                     <img draggable="false" alt="Action Shot" class="rounded-lg object-cover h-64 w-full mt-12 shadow-lg"
-                        src="imgs/helmet.png" />
-                </div>
+                        src="../imgs/helmet.png" />
+                </div> -->
             </div>
         </div>
     </section>
@@ -194,7 +196,7 @@
                 </div>
                 <div class="stat-card bg-white/5 border-l-4 border-white p-8 transition-all">
                     <span class="text-slate-500 uppercase font-bold text-xs tracking-tighter">Champ. Points</span>
-                    <div class="text-5xl font-black italic mt-2 text-white" id="champ_points">28</div>
+                    <div class="text-5xl font-black italic mt-2 text-white" id="champ_points">0</div>
                 </div>
             </div>
         </div>
@@ -205,17 +207,12 @@
             <div class="grid md:grid-cols-4 gap-12 mb-16">
                 <div class="col-span-2">
                     <div class="flex items-center gap-3 mb-6">
-                        <div class="size-8 bg-primary flex items-center justify-center rounded">
-                            <span class="material-symbols-outlined text-black font-bold">speed</span>
-                        </div>
                         <h2 class="text-2xl font-black tracking-tighter uppercase italic">DSA Digital <span
                                 class="text-primary">Formula Team</span></h2>
                     </div>
                     <p class="text-slate-400 max-w-sm mb-8">
-                        The premiere racing team for iRacing Formula 1600. Excellence is not an option, it's our
-                        standard on every
-                        corner,
-                        every lap, every race.
+                        A racing team for sim racing categories. Excellence is not an option;
+                        it is our standard in every corner, every lap, and every race.
                     </p>
                 </div>
                 <div>
@@ -238,7 +235,7 @@
         </div> -->
             </div>
             <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
-                <p class="text-slate-500 text-sm italic">© 2025 DSA Digital Formula Team. All Rights Reserved.</p>
+                <p class="text-slate-500 text-sm italic">© 2026 DSA Digital Formula Team. All Rights Reserved.</p>
                 <!-- <div class="flex gap-8 text-xs font-bold uppercase tracking-widest text-slate-500">
           <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
           <a class="hover:text-white transition-colors" href="#">Terms of Use</a>
